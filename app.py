@@ -20,10 +20,7 @@ def replace_placeholders(template, data):
     for key, value in data.items():
         placeholder = '{{ ' + key + ' }}'
         if placeholder in template:
-            print(f"Replacing {placeholder} with {value}")
             template = template.replace(placeholder, str(value))
-        else:
-            print(f"No placeholder for {key} in the template.")
     return template
 
 def generate_receipts():
