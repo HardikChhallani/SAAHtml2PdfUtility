@@ -3,7 +3,9 @@ import pdfkit
 import os
 
 # Use the relative path for wkhtmltopdf binary located in the 'bin' directory
+# path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
 path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
+
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
 options = {
